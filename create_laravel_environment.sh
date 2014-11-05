@@ -30,9 +30,9 @@ NameVirtualHost *:80
     DocumentRoot /var/www/$name/public
 
     <Directory "/var/www/$name/public">
-        AllowOverride All 
-        Order allow,deny
-        Allow from all 
+		AllowOverride All
+		Options Indexes MultiViews FollowSymLinks
+		Require all granted
     </Directory>
 </VirtualHost>
 EOF
