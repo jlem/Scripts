@@ -24,7 +24,7 @@ fi
 
 # 1. Install laravel
 cd /var/www
-~/.composer/vendor/bin/laravel new $name &> /dev/null
+~/.composer/vendor/bin/lumen new $name &> /dev/null
 echo -e "${counter}. ${green}New laravel project installed into${yellow} '/var/www/$name'${end}\n"
 counter=$[counter + 1]
 
